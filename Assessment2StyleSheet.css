@@ -1,0 +1,92 @@
+body{/*consistent styling for most of the code*/
+  background-color:black;
+  color:white;
+  font-size:32px;
+}
+
+@media screen and (max-width:900px){/*slight responsiveness for less width usage*/
+  body{background-color:black;
+  color:white;
+font-size:24px;
+display:table;
+}}
+@media screen and (max-width:600px){/*slight responsiveness for less width usage*/
+  body{background-color:black;
+  color:white;
+font-size:16px;display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+}}
+
+/*The following are IDs and classes for separate page stylings*/
+#h1Home{
+  color:white;font-family:Arial Narrow;
+}
+#h2Home{
+  color:white;font-family:Times New Roman;
+}
+#pContact{
+  color:white;font-family:Arial;
+  word-spacing:4.5px;margin-left:0px;margin-left:auto;display:flex;
+  margin-right:auto;list-style-type:none;width:50%;margin-bottom:50px;overflow:hidden;
+}
+.contactLinks{
+  color:#be2a2a;
+  font-size:48px;
+}
+li{
+  font-family:Arial Narrow;
+  word-spacing:3.5px;
+}
+#storyDesc{
+  position:absolute;display:flex;
+  color:white;font-family:Arial;word-spacing:5px;
+  right:150px;margin-right:50px;margin-left:auto;list-style-type:none;
+  width:50%;height:auto;overflow:hidden;
+}
+#hAbout{
+  color:white;font-family:Arial Bold;left:50px;
+}
+#pAbout{
+  color:white;font-family:Arial;
+  word-spacing:5px;left:40px;margin-left:40px;display:flex;
+  margin-right:auto;list-style-type:none;width:80%;margin-bottom:50px;overflow:hidden;
+}
+.rightAlign {/*aligning text to the right side*/
+  position:relative;
+  color:white;font-family:Arial;
+  word-spacing:5px;right:40px;margin-right:40px;float:right;
+  margin-left:auto;list-style-type:none;width:80%;margin-bottom:50px;overflow:hidden;
+}
+/*navigation bar for all pages*/
+.navbar {
+    background-color: #be2a2a;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: middle;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 32px;
+  }
+
+  .navbar {
+    position:relative;
+    top: 30;
+    z-index: 1030; /*this ensures that the nav bar doesn't get covered*/
+ }
+  
+  /*change the color of links on hover*/
+  .navbar a:hover {
+    background-color: #72069c;
+    color: #be2a2a;
+  }
+  /*add a color to the active/current link*/
+  .navbar a.active {
+    background-color: #72069c;
+    color: white;
+  }
+
